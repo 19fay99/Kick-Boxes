@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Cursor.visible = false;
         p1Score = 0;
         p2Score = 0;
 
@@ -22,7 +23,11 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyUp(KeyCode.Escape))
+        {
+            Application.Quit();
+            Debug.Log("Game Closed");
+        }
     }
 
     private void UpdateP1Score(int p1ScoreToAdd)
