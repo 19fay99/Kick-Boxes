@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class Quit : MonoBehaviour
 {
+    void Start()
+    {
+        Cursor.visible = false;
+    }
+
     public void QuitGame()
     {
         Application.Quit();
