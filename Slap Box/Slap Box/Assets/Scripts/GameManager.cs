@@ -52,7 +52,7 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
-        if(p1Score >= 1)
+        if(p1Score >= 20)
         {
             isGameActive = false;
             p1WinsText.gameObject.SetActive(true);
