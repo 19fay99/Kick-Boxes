@@ -4,8 +4,8 @@ using UnityEngine;
 using TMPro;
 public class GameManager : MonoBehaviour
 {
-    private int p1Score;
-    private int p2Score;
+    public int p1Score = 0;
+    public int p2Score = 0;
     public TextMeshProUGUI p1ScoreText;
     public TextMeshProUGUI p2ScoreText;
 
@@ -13,8 +13,6 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         Cursor.visible = false;
-        p1Score = 0;
-        p2Score = 0;
 
         UpdateP1Score(0);
         UpdateP2Score(0);
@@ -30,13 +28,13 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void UpdateP1Score(int p1ScoreToAdd)
+    public void UpdateP1Score(int p1ScoreToAdd)
     {
         p1Score = p1Score + p1ScoreToAdd;
         p1ScoreText.text = "P1 Score: " + p1Score;
     }
 
-    private void UpdateP2Score(int p2ScoreToAdd)
+    public void UpdateP2Score(int p2ScoreToAdd)
     {
         p2Score = p2Score + p2ScoreToAdd;
         p2ScoreText.text = "P2 Score: " + p2Score;
