@@ -58,5 +58,7 @@ public class GameManager : MonoBehaviour
         {
             p2WinsText.gameObject.SetActive(true);
         }
+
+        isGameActive = false;
     }
 }
