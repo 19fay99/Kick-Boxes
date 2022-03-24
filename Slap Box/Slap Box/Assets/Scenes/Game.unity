@@ -25609,7 +25609,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2322f992a188ea4db647bc9cf629ce0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 9
   rb: {fileID: 1418368136}
 --- !u!212 &1418368134
 SpriteRenderer:
@@ -34703,7 +34703,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prefabs:
   - {fileID: 7605307072034396127, guid: 9ff7dd9b10e53024d9e7bf0844508808, type: 3}
-  spawnInterval: 10
 --- !u!4 &1875900553
 Transform:
   m_ObjectHideFlags: 0
