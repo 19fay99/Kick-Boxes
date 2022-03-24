@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public int p1Score = 0;
@@ -10,6 +11,8 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI p2ScoreText;
     public TextMeshProUGUI p1WinsText;
     public TextMeshProUGUI p2WinsText;
+    public Button restartButton;
+    public Button quitButton;
     public bool isGameActive;
 
     // Start is called before the first frame update
@@ -49,16 +52,21 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
-        if(p1Score >= 20)
+        if(p1Score >= 1)
         {
+            isGameActive = false;
             p1WinsText.gameObject.SetActive(true);
+            restartButton.gameObject.SetActive(true);
+            quitButton.gameObject.SetActive(true);
         }
 
         if(p2Score >= 20)
         {
+            isGameActive = false;
             p2WinsText.gameObject.SetActive(true);
+            restartButton.gameObject.SetActive(true);
+            quitButton.gameObject.SetActive(true);
         }
 
-        isGameActive = false;
     }
 }

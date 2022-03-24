@@ -20,16 +20,19 @@ public class MetalCratePoints : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.transform.name == "GreenShip")
+        if (gameManager.isGameActive == true)
         {
-            gameManager.UpdateP1Score(3);
-            Destroy(gameObject);
-        }
+            if (collision.transform.name == "GreenShip")
+            {
+                gameManager.UpdateP1Score(3);
+                Destroy(gameObject);
+            }
 
-        if (collision.transform.name == "PurpleShip")
-        {
-            gameManager.UpdateP2Score(3);
-            Destroy(gameObject);
+            if (collision.transform.name == "PurpleShip")
+            {
+                gameManager.UpdateP2Score(3);
+                Destroy(gameObject);
+            }
         }
     }
 }
