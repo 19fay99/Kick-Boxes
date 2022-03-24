@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7605307072034396097}
   - component: {fileID: 7605307072034396098}
   - component: {fileID: -8679781083145457097}
+  - component: {fileID: -374809348034249524}
   m_Layer: 0
   m_Name: wood_crate
   m_TagString: Untagged
@@ -144,3 +145,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6b19013cdf39be4589b7bd93893dcb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-374809348034249524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7605307072034396127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a63eb0fd35b95404db472829f34c4c1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  push: 20

@@ -23,7 +23,7 @@ public class MetalCrateSpawner : MonoBehaviour
     void SpawnCrate()
     {
         int PrefabIndex = Random.Range(0, Prefabs.Length);
-        Vector2 spawnPos = new Vector2(0, 0);
+        Vector2 spawnPos = new Vector2(0, -7.50f);
 
         Instantiate(Prefabs[PrefabIndex], spawnPos, Prefabs[PrefabIndex].transform.rotation);
     }
