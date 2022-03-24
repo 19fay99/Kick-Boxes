@@ -6,7 +6,7 @@ public class CrateSpawnManager : MonoBehaviour
 {
     public GameObject[] Prefabs;
     private float startDelay = 1;
-    public float spawnInterval = 5;
+    private float spawnInterval = 5;
 
     // Start is called before the first frame update
     void Start()
